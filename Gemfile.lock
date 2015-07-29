@@ -64,11 +64,14 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.5.2)
+    figaro (1.1.1)
+      thor (~> 0.14)
     foundation-rails (5.5.2.1)
       railties (>= 3.1.0)
       sass (>= 3.3.0, < 3.5)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
+    hurley (0.1)
     i18n (0.7.0)
     jbuilder (2.3.1)
       activesupport (>= 3.0.0, < 5)
@@ -134,6 +137,8 @@ GEM
     rake (10.4.2)
     rdoc (4.2.0)
       json (~> 1.4)
+    responders (2.1.0)
+      railties (>= 4.2.0, < 5)
     rspec-core (3.3.2)
       rspec-support (~> 3.3.0)
     rspec-expectations (3.3.1)
@@ -199,7 +204,9 @@ DEPENDENCIES
   byebug
   capybara
   coffee-rails (~> 4.1.0)
+  figaro
   foundation-rails
+  hurley
   jbuilder (~> 2.0)
   jquery-rails
   launchy
@@ -208,6 +215,7 @@ DEPENDENCIES
   poltergeist
   rails (= 4.2.3)
   rails_12factor
+  responders
   rspec-rails
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
