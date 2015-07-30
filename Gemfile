@@ -13,6 +13,7 @@ gem 'rails_12factor', group: :production
 gem 'hurley'
 gem 'figaro'
 gem 'responders'
+gem 'flipclockjs-rails', '~> 0.7.7'
 
 group :development, :test do
   gem 'byebug'
