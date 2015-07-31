@@ -14,6 +14,12 @@ gem 'hurley'
 gem 'figaro'
 gem 'responders'
 gem 'flipclockjs-rails', '~> 0.7.7'
+gem 'angularjs-foundation-rails'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-angular', '1.2.16'
+  gem 'rails-assets-angular-mocks', '1.2.16'
+end
 
 group :development, :test do
   gem 'byebug'
@@ -29,5 +35,6 @@ group :test do
   gem 'webmock'
   gem 'rspec-rails'
   gem 'mocha'
+  gem 'jasmine'
 end
 
