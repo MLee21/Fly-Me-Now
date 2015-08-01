@@ -8,9 +8,10 @@ class WeatherService
   end
 
   def forecast_data
+    #returns 3 ForecastDay objects
     response = parse(connection.get("api/#{ENV['weather_api_key']}/forecast/q/#{state}/#{city}.json"))
-    weather_data = response[:forecast][:simpleforecast][:forecastday]
-    Forecast.new(weather_data)
+    weather_data_array = response[:forecast][:simpleforecast][:forecastday]
+    weather_data_array.map { |day| ForecastDay.new(day) }
   end
 
   private
