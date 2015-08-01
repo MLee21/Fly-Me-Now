@@ -7,7 +7,8 @@ class WeatherService
   end
 
   def forecast_data(state, city)
-   parse(connection.get("api/#{ENV['weather_api_key']}/forecast/q/#{state}/#{city}.json"))[:forecast][:simpleforecast][:forecastday]
+    response = parse(connection.get("api/#{ENV['weather_api_key']}/forecast/q/#{state}/#{city}.json"))
+    response[:forecast][:simpleforecast][:forecastday]
   end
 
   private
