@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.wunderground.com/api//forecast/q/CO/Denver.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Hurley v0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/2.2.15 (CentOS)
+      Access-Control-Allow-Origin:
+      - http://www.wunderground.com
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Api-Error:
+      - 'true'
+      X-Creationtime:
+      - '0.035'
+      Cneonction:
+      - close
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Accept-Encoding
+      Expires:
+      - Sat, 01 Aug 2015 01:59:40 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Sat, 01 Aug 2015 01:59:40 GMT
+      Content-Length:
+      - '225'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - DT=1438394380:8939:365-dell-a4; path=/; expires=Fri, 01-Jan-2020 00:00:00
+        GMT; domain=.wunderground.com
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  }\n\t\t,\n\t\"error\": {\n\t\t\"type\": \"keynotfound\"\n\t\t,\"description\":
+        \"this key does not exist\"\n\t}\n\t}\n}\n"
+    http_version: 
+  recorded_at: Sat, 01 Aug 2015 01:59:41 GMT
+recorded_with: VCR 2.9.3
