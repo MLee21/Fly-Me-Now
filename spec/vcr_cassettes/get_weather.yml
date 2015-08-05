@@ -12,7 +12,7 @@ http_interactions:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - '*/*'
+      - "*/*"
   response:
     status:
       code: 200
@@ -21,71 +21,73 @@ http_interactions:
       Server:
       - Apache/2.2.15 (CentOS)
       Access-Control-Allow-Origin:
-      - '*'
+      - "*"
       Access-Control-Allow-Credentials:
       - 'true'
       X-Creationtime:
-      - '0.081'
+      - '0.044'
       Last-Modified:
-      - Mon, 03 Aug 2015 19:39:02 GMT
+      - Mon, 03 Aug 2015 19:50:24 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Vary:
       - Accept-Encoding
       Expires:
-      - Mon, 03 Aug 2015 19:39:02 GMT
+      - Mon, 03 Aug 2015 19:50:24 GMT
       Cache-Control:
       - max-age=0, no-cache
       Pragma:
       - no-cache
       Date:
-      - Mon, 03 Aug 2015 19:39:02 GMT
+      - Mon, 03 Aug 2015 19:50:24 GMT
       Content-Length:
-      - '7278'
+      - '7307'
       Connection:
       - keep-alive
       Set-Cookie:
-      - DT=1438630742:9702:365-u2; path=/; expires=Fri, 01-Jan-2020 00:00:00 GMT;
+      - DT=1438631424:8112:365-u5; path=/; expires=Fri, 01-Jan-2020 00:00:00 GMT;
         domain=.wunderground.com
     body:
       encoding: UTF-8
       string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
         \ \"features\": {\n  \"forecast\": 1\n  }\n\t}\n\t\t,\n\t\"forecast\":{\n\t\t\"txt_forecast\":
-        {\n\t\t\"date\":\"12:14 PM MDT\",\n\t\t\"forecastday\": [\n\t\t{\n\t\t\"period\":0,\n\t\t\"icon\":\"cloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/cloudy.gif\",\n\t\t\"title\":\"Monday\",\n\t\t\"fcttext\":\"Generally
-        cloudy. A stray shower or thunderstorm is possible. High 81F. Winds SE at
-        5 to 10 mph.\",\n\t\t\"fcttext_metric\":\"Variable clouds with scattered thunderstorms.
-        High 27C. Winds SSE at 10 to 15 km/h. Chance of rain 40%.\",\n\t\t\"pop\":\"20\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":1,\n\t\t\"icon\":\"nt_chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_chancetstorms.gif\",\n\t\t\"title\":\"Monday
-        Night\",\n\t\t\"fcttext\":\"Scattered thunderstorms early, then partly cloudy
-        after midnight. Low near 60F. Winds SSW at 5 to 10 mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Scattered
+        {\n\t\t\"date\":\"12:44 PM MDT\",\n\t\t\"forecastday\": [\n\t\t{\n\t\t\"period\":0,\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"title\":\"Monday\",\n\t\t\"fcttext\":\"Mixed
+        clouds and sun with scattered thunderstorms. High near 80F. Winds SSE at 5
+        to 10 mph. Chance of rain 40%.\",\n\t\t\"fcttext_metric\":\"Variable clouds
+        with scattered thunderstorms. High 27C. Winds SSE at 10 to 15 km/h. Chance
+        of rain 40%.\",\n\t\t\"pop\":\"40\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":1,\n\t\t\"icon\":\"nt_chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_chancetstorms.gif\",\n\t\t\"title\":\"Monday
+        Night\",\n\t\t\"fcttext\":\"Partly to mostly cloudy skies with scattered thunderstorms
+        during the evening. Low 59F. Winds SSW at 5 to 10 mph. Chance of rain 50%.\",\n\t\t\"fcttext_metric\":\"Scattered
         thunderstorms early, then partly cloudy after midnight. Low near 15C. Winds
-        SSW at 10 to 15 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":2,\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"title\":\"Tuesday\",\n\t\t\"fcttext\":\"Sunny
-        skies. High 91F. Winds WNW at 10 to 20 mph.\",\n\t\t\"fcttext_metric\":\"Mainly
-        sunny. High 33C. Winds WNW at 15 to 30 km/h.\",\n\t\t\"pop\":\"0\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":3,\n\t\t\"icon\":\"nt_clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_clear.gif\",\n\t\t\"title\":\"Tuesday
+        SSW at 10 to 15 km/h. Chance of rain 50%.\",\n\t\t\"pop\":\"50\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":2,\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"title\":\"Tuesday\",\n\t\t\"fcttext\":\"Sunny.
+        High 91F. Winds WNW at 10 to 20 mph.\",\n\t\t\"fcttext_metric\":\"Mainly sunny.
+        High 33C. Winds WNW at 15 to 30 km/h.\",\n\t\t\"pop\":\"0\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":3,\n\t\t\"icon\":\"nt_clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_clear.gif\",\n\t\t\"title\":\"Tuesday
         Night\",\n\t\t\"fcttext\":\"A mostly clear sky. Low 61F. Winds WSW at 10 to
         15 mph.\",\n\t\t\"fcttext_metric\":\"Clear skies. Low 16C. Winds WSW at 15
-        to 25 km/h.\",\n\t\t\"pop\":\"0\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":4,\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"title\":\"Wednesday\",\n\t\t\"fcttext\":\"Sunny,
-        along with a few afternoon clouds. High 94F. Winds S at 5 to 10 mph.\",\n\t\t\"fcttext_metric\":\"Except
+        to 25 km/h.\",\n\t\t\"pop\":\"0\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":4,\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"title\":\"Wednesday\",\n\t\t\"fcttext\":\"Sunshine
+        and some clouds. High 93F. Winds S at 5 to 10 mph.\",\n\t\t\"fcttext_metric\":\"Except
         for a few afternoon clouds, mainly sunny. High 34C. Winds S at 10 to 15 km/h.\",\n\t\t\"pop\":\"0\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":5,\n\t\t\"icon\":\"nt_clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_clear.gif\",\n\t\t\"title\":\"Wednesday
-        Night\",\n\t\t\"fcttext\":\"A few clouds from time to time. Low 63F. Winds
-        WSW at 5 to 10 mph.\",\n\t\t\"fcttext_metric\":\"Mostly clear skies. Low 17C.
-        Winds WSW at 10 to 15 km/h.\",\n\t\t\"pop\":\"0\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":6,\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"title\":\"Thursday\",\n\t\t\"fcttext\":\"Partly
-        cloudy skies. High 94F. Winds WNW at 10 to 15 mph.\",\n\t\t\"fcttext_metric\":\"Partly
+        Night\",\n\t\t\"fcttext\":\"Mostly clear skies. Low 62F. Winds WSW at 5 to
+        10 mph.\",\n\t\t\"fcttext_metric\":\"Mostly clear skies. Low 17C. Winds WSW
+        at 10 to 15 km/h.\",\n\t\t\"pop\":\"0\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":6,\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"title\":\"Thursday\",\n\t\t\"fcttext\":\"Partly
+        cloudy. High 94F. Winds WNW at 10 to 15 mph.\",\n\t\t\"fcttext_metric\":\"Partly
         cloudy. High 34C. Winds WNW at 15 to 25 km/h.\",\n\t\t\"pop\":\"0\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":7,\n\t\t\"icon\":\"nt_partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"title\":\"Thursday
-        Night\",\n\t\t\"fcttext\":\"Clear to partly cloudy. Low 62F. Winds SSW at
+        Night\",\n\t\t\"fcttext\":\"Clear to partly cloudy. Low 61F. Winds SSW at
         5 to 10 mph.\",\n\t\t\"fcttext_metric\":\"Partly cloudy. Low 16C. Winds SSW
         at 10 to 15 km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t]\n\t\t},\n\t\t\"simpleforecast\":
         {\n\t\t\"forecastday\": [\n\t\t{\"date\":{\n\t\"epoch\":\"1438650000\",\n\t\"pretty\":\"7:00
         PM MDT on August 03, 2015\",\n\t\"day\":3,\n\t\"month\":8,\n\t\"year\":2015,\n\t\"yday\":214,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"August\",\n\t\"monthname_short\":\"Aug\",\n\t\"weekday_short\":\"Mon\",\n\t\"weekday\":\"Monday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"MDT\",\n\t\"tz_long\":\"America/Denver\"\n},\n\t\t\"period\":1,\n\t\t\"high\":
-        {\n\t\t\"fahrenheit\":\"81\",\n\t\t\"celsius\":\"27\"\n\t\t},\n\t\t\"low\":
-        {\n\t\t\"fahrenheit\":\"60\",\n\t\t\"celsius\":\"16\"\n\t\t},\n\t\t\"conditions\":\"Overcast\",\n\t\t\"icon\":\"cloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/cloudy.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":20,\n\t\t\"qpf_allday\":
-        {\n\t\t\"in\": 0.03,\n\t\t\"mm\": 1\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
-        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.02,\n\t\t\"mm\":
+        {\n\t\t\"fahrenheit\":\"80\",\n\t\t\"celsius\":\"27\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"59\",\n\t\t\"celsius\":\"15\"\n\t\t},\n\t\t\"conditions\":\"Chance
+        of a Thunderstorm\",\n\t\t\"icon\":\"chancetstorms\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/chancetstorms.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":40,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.09,\n\t\t\"mm\": 2\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.04,\n\t\t\"mm\": 1\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.05,\n\t\t\"mm\":
         1\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
         {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
         0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
-        16,\n\t\t\"dir\": \"SE\",\n\t\t\"degrees\": 146\n\t\t},\n\t\t\"avewind\":
-        {\n\t\t\"mph\": 8,\n\t\t\"kph\": 13,\n\t\t\"dir\": \"SE\",\n\t\t\"degrees\":
-        146\n\t\t},\n\t\t\"avehumidity\": 33,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        16,\n\t\t\"dir\": \"SSE\",\n\t\t\"degrees\": 148\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 9,\n\t\t\"kph\": 14,\n\t\t\"dir\": \"SSE\",\n\t\t\"degrees\":
+        148\n\t\t},\n\t\t\"avehumidity\": 33,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
         0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1438736400\",\n\t\"pretty\":\"7:00
         PM MDT on August 04, 2015\",\n\t\"day\":4,\n\t\"month\":8,\n\t\"year\":2015,\n\t\"yday\":215,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"August\",\n\t\"monthname_short\":\"Aug\",\n\t\"weekday_short\":\"Tue\",\n\t\"weekday\":\"Tuesday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"MDT\",\n\t\"tz_long\":\"America/Denver\"\n},\n\t\t\"period\":2,\n\t\t\"high\":
         {\n\t\t\"fahrenheit\":\"91\",\n\t\t\"celsius\":\"33\"\n\t\t},\n\t\t\"low\":
@@ -96,23 +98,23 @@ http_interactions:
         {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
         0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 20,\n\t\t\"kph\":
         32,\n\t\t\"dir\": \"WNW\",\n\t\t\"degrees\": 286\n\t\t},\n\t\t\"avewind\":
-        {\n\t\t\"mph\": 15,\n\t\t\"kph\": 24,\n\t\t\"dir\": \"WNW\",\n\t\t\"degrees\":
-        286\n\t\t},\n\t\t\"avehumidity\": 28,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        {\n\t\t\"mph\": 16,\n\t\t\"kph\": 26,\n\t\t\"dir\": \"WNW\",\n\t\t\"degrees\":
+        286\n\t\t},\n\t\t\"avehumidity\": 29,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
         0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1438822800\",\n\t\"pretty\":\"7:00
         PM MDT on August 05, 2015\",\n\t\"day\":5,\n\t\"month\":8,\n\t\"year\":2015,\n\t\"yday\":216,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"August\",\n\t\"monthname_short\":\"Aug\",\n\t\"weekday_short\":\"Wed\",\n\t\"weekday\":\"Wednesday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"MDT\",\n\t\"tz_long\":\"America/Denver\"\n},\n\t\t\"period\":3,\n\t\t\"high\":
-        {\n\t\t\"fahrenheit\":\"94\",\n\t\t\"celsius\":\"34\"\n\t\t},\n\t\t\"low\":
-        {\n\t\t\"fahrenheit\":\"63\",\n\t\t\"celsius\":\"17\"\n\t\t},\n\t\t\"conditions\":\"Clear\",\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":0,\n\t\t\"qpf_allday\":
+        {\n\t\t\"fahrenheit\":\"93\",\n\t\t\"celsius\":\"34\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"62\",\n\t\t\"celsius\":\"17\"\n\t\t},\n\t\t\"conditions\":\"Clear\",\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":0,\n\t\t\"qpf_allday\":
         {\n\t\t\"in\": 0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
         0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
         0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
         {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
         0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
-        16,\n\t\t\"dir\": \"S\",\n\t\t\"degrees\": 183\n\t\t},\n\t\t\"avewind\": {\n\t\t\"mph\":
-        8,\n\t\t\"kph\": 13,\n\t\t\"dir\": \"S\",\n\t\t\"degrees\": 183\n\t\t},\n\t\t\"avehumidity\":
+        16,\n\t\t\"dir\": \"S\",\n\t\t\"degrees\": 179\n\t\t},\n\t\t\"avewind\": {\n\t\t\"mph\":
+        8,\n\t\t\"kph\": 13,\n\t\t\"dir\": \"S\",\n\t\t\"degrees\": 179\n\t\t},\n\t\t\"avehumidity\":
         24,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\": 0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1438909200\",\n\t\"pretty\":\"7:00
         PM MDT on August 06, 2015\",\n\t\"day\":6,\n\t\"month\":8,\n\t\"year\":2015,\n\t\"yday\":217,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"1\",\n\t\"monthname\":\"August\",\n\t\"monthname_short\":\"Aug\",\n\t\"weekday_short\":\"Thu\",\n\t\"weekday\":\"Thursday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"MDT\",\n\t\"tz_long\":\"America/Denver\"\n},\n\t\t\"period\":4,\n\t\t\"high\":
         {\n\t\t\"fahrenheit\":\"94\",\n\t\t\"celsius\":\"34\"\n\t\t},\n\t\t\"low\":
-        {\n\t\t\"fahrenheit\":\"62\",\n\t\t\"celsius\":\"17\"\n\t\t},\n\t\t\"conditions\":\"Partly
+        {\n\t\t\"fahrenheit\":\"61\",\n\t\t\"celsius\":\"16\"\n\t\t},\n\t\t\"conditions\":\"Partly
         Cloudy\",\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":0,\n\t\t\"qpf_allday\":
         {\n\t\t\"in\": 0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
         0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
@@ -120,9 +122,9 @@ http_interactions:
         {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
         0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 15,\n\t\t\"kph\":
         24,\n\t\t\"dir\": \"WNW\",\n\t\t\"degrees\": 296\n\t\t},\n\t\t\"avewind\":
-        {\n\t\t\"mph\": 10,\n\t\t\"kph\": 16,\n\t\t\"dir\": \"WNW\",\n\t\t\"degrees\":
-        296\n\t\t},\n\t\t\"avehumidity\": 22,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        {\n\t\t\"mph\": 11,\n\t\t\"kph\": 18,\n\t\t\"dir\": \"WNW\",\n\t\t\"degrees\":
+        296\n\t\t},\n\t\t\"avehumidity\": 23,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
         0\n\t\t}\n\t\t]\n\t\t}\n\t}\n}\n"
     http_version: 
-  recorded_at: Mon, 03 Aug 2015 19:39:02 GMT
+  recorded_at: Mon, 03 Aug 2015 19:50:24 GMT
 recorded_with: VCR 2.9.3
