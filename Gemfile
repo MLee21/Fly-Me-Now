@@ -19,6 +19,7 @@ gem 'angularjs-foundation-rails'
 source 'https://rails-assets.org' do
   gem 'rails-assets-angular', '1.2.16'
   gem 'rails-assets-angular-mocks', '1.2.16'
+  gem 'rails-assets-moment'
 end
 
 group :development, :test do
