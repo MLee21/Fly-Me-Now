@@ -1,6 +1,6 @@
-// app.controller('flightsController', ['$scope', 'geolocateUser', function($scope, geolocateUser){
-//   geolocateUser(function(location) {
-//     $scope.location = location;
-//     console.log(location);
-//   });
-// }]);
+app.controller('flightsController', ['$scope', 'iataConversion', function($scope, iataConversion){
+  iataConversion.then(function(response) {
+    $scope.response = response;
+    console.log(response);
+  });
+}]);

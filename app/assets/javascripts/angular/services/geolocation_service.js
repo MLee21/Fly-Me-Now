@@ -1,4 +1,4 @@
-app.factory('geolocateUser', function($window) {
+app.factory('geolocateUser', function($window, $q) {
   var deferred = $q.defer();
 
   $window.navigator.geolocation.getCurrentPosition(function(position){
@@ -15,7 +15,7 @@ app.factory('geolocateUser', function($window) {
           if(ac.types.indexOf("administrative_area_level_1") >= 0) state = ac.long_name;
         }
         if(city != '' && state != '') {
-          deferred.resolved(city);
+          deferred.resolve(city);
         }
       }
     });
