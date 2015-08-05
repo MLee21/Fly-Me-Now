@@ -53,7 +53,7 @@ http_interactions:
       encoding: UTF-8
       string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
         \ \"features\": {\n  \"forecast\": 1\n  }\n\t}\n\t\t,\n\t\"forecast\":{\n\t\t\"txt_forecast\":
-        {\n\t\t\"date\":\"5:59 AM MDT\",\n\t\t\"forecastday\": [\n\t\t{\n\t\t\"period\":0,\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"title\":\"Wednesday\",\n\t\t\"fcttext\":\"Sunshine
+        {\n\t\t\"date\":\"5:59 AM MDT\",\n\t\t\"forecastday\": [\n\t\t{\n\t\t\"period\":0,\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"\",\n\t\t\"title\":\"Wednesday\",\n\t\t\"fcttext\":\"Sunshine
         to start, then a few afternoon clouds. A stray shower or thunderstorm is possible.
         High 94F. Winds S at 5 to 10 mph.\",\n\t\t\"fcttext_metric\":\"Sunshine to
         start, then a few afternoon clouds. A stray shower or thunderstorm is possible.

@@ -1,6 +1,6 @@
 <div class="row">
   <div class="large-12 columns hero">
-  <%#= image_tag("beach.jpg") %>
+
 
 <div class="pull-right">
 <div class="row">
@@ -10,27 +10,28 @@
   <table class="top-deals">
   <th><h3 class="center-text"> Top Destinations </h3></th>
     <tr>
-    <td><%= link_to "New York", 'http://www.expedia.com/Cheap-Flights-To-New-York.d178293.Travel-Guide-Flights' %></td>
+    <td><%= link_to "New York", deal_path(1) %></td>
       <td>$389</td> 
     </tr>
 
    <tr>
-     <td><%= link_to "Atlanta", 'http://www.expedia.com/Cheap-Flights-To-Atlanta.d178232.Travel-Guide-Flights?regionId=178232&lob=f&semcid=US.MULTILOB.GOOGLE.SEARCH.FLIGHT&kword=Atlanta_Flight_DSA!e.ZzZz.4080000000111.0.82408577360._cat%3Aunited%20states%2Fgeorgia%2Fatlanta%23inurl%3Atravel-guide-flights.atlanta_flight_dsa&gclid=CP3wv6D6kccCFQuMaQodZl0P5g' %></td>
+     <td><%= link_to "Atlanta", deal_path(1)%></td>
       <td>$299</td> 
     </tr>
 
     <tr>
-      <td><%= link_to "Chicago", 'http://www.expedia.com/Cheap-Flights-To-Chicago.d178248.Travel-Guide-Flights?regionId=178248&lob=f&semcid=US.MULTILOB.GOOGLE.SEARCH.FLIGHT&kword=Chicago_Flight_DSA!e.ZzZz.4060000001254.0.85760200889._cat%3Aunited%20states%2Fillinois%2Fchicago%23inurl%3Atravel-guide-flights.chicago_flight_dsa&gclid=CIDrjrH6kccCFYU5aQodZSANuA' %></td>
+      <td><%= link_to "Chicago", deal_path(1)%></td>
       <td>$249</td> 
     </tr>
 
      <tr>
-       <td><%= link_to "Seattle", 'http://www.expedia.com/Cheap-Flights-To-Seattle.d178307.Travel-Guide-Flights' %></td>
+       <td><%= link_to "Seattle", deal_path(1) %></td>
       <td>$219</td> 
     </tr>
 
     <tr>
-      <td><%= link_to "Los Angeles", 'http://www.expedia.com/Cheap-Flights-To-Los-Angeles.d178280.Travel-Guide-Flights' %></td>
+
+      <td><%= link_to "Los Angeles", deal_path(1) %></td>
       <td>$199</td> 
     </tr>
   </table>
