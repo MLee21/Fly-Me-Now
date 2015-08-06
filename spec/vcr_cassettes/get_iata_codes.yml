@@ -1,0 +1,38 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://airport.api.aero/airport/match/Denver?user_key=8fdd2f669ad0c36eee5dc1d43421fa01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Hurley v0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/x-javascript
+      Date:
+      - Wed, 05 Aug 2015 21:48:33 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Length:
+      - '459'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: callback({"processingDurationMillis":3,"authorisedAPI":true,"success":true,"airline":null,"errorMessage":null,"airports":[{"code":"APA","name":"Centennial","city":"Denver","country":"United
+        States","lat":39.570129,"lng":-104.849294,"terminal":null,"gate":null,"timezone":"America/Denver"},{"code":"DEN","name":"Denver
+        Intl","city":"Denver","country":"United States","lat":39.861656,"lng":-104.673178,"terminal":null,"gate":null,"timezone":"America/Denver"}]})
+    http_version: 
+  recorded_at: Wed, 05 Aug 2015 21:48:33 GMT
+recorded_with: VCR 2.9.3
