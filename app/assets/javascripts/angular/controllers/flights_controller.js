@@ -1,5 +1,5 @@
-app.controller('flightsController', ['$scope', 'iataConversion', function($scope, iataConversion){
-  iataConversion.then(function(response) {
+app.controller('flightsController', ['$scope', 'flightInformation', function($scope, flightInformation){
+  flightInformation.then(function(response) {
     $scope.response = response;
     console.log(response);
   });

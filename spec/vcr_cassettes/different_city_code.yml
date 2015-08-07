@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://airport.api.aero/airport/match/Austin?user_key=8fdd2f669ad0c36eee5dc1d43421fa01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Hurley v0.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/x-javascript
+      Date:
+      - Wed, 05 Aug 2015 22:45:08 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Length:
+      - '660'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: callback({"processingDurationMillis":3,"authorisedAPI":true,"success":true,"airline":null,"errorMessage":null,"airports":[{"code":"GRB","name":"Austin
+        Straubel Intl","city":"Green Bay","country":"United States","lat":44.485072,"lng":-88.129589,"terminal":null,"gate":null,"timezone":"America/Menominee"},{"code":"AUS","name":"Austin
+        Bergstrom Intl","city":"Austin","country":"United States","lat":30.194528,"lng":-97.669889,"terminal":null,"gate":null,"timezone":"America/Chicago"},{"code":"ATT","name":"Camp
+        Mabry Austin City","city":"Austin TX","country":"United States","lat":30.31666,"lng":-97.7666,"terminal":null,"gate":null,"timezone":"America/Nome"}]})
+    http_version: 
+  recorded_at: Wed, 05 Aug 2015 22:45:08 GMT
+recorded_with: VCR 2.9.3
