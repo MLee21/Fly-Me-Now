@@ -15,6 +15,8 @@ gem 'figaro'
 gem 'responders'
 gem 'flipclockjs-rails', '~> 0.7.7'
 gem 'angularjs-foundation-rails'
+gem 'sidekiq'
+gem 'sinatra'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-angular', '1.2.16'
