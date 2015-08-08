@@ -1,0 +1,21 @@
+#flight information service.rb needs:
+  to take in a destination in init and pass to endpoint
+  Destination: airport code
+  change endpoint? No
+
+
+grab flight info service 
+  take in the destinations from user checkboxes
+  do not geoLocate User at all
+
+Create checkboxes for user destinations on homepage
+ when user clicks submit
+
+1. Separate geolocating user 
+2. receive input from user (destinations)
+3. Search for flights 
+  a) update the hash with destinations
+4. Display results without refreshing the page
+
+
+
