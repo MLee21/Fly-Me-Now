@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://fs-json.demo.vayant.com/?DepartureFrom=2015-08-06&Environment=fast_search_1_0&Origin=DEN&Pass=0da933f3c6e6d8199ed02797b2e7f538e01e4a72&PriceMax=500&Response=json&User=Minnie.lee89@gmail.com&Version=2.7
+    uri: http://fs-json.demo.vayant.com/?DepartureFrom=2015-08-07&Environment=fast_search_1_0&Origin=DEN&Pass=0da933f3c6e6d8199ed02797b2e7f538e01e4a72&PriceMax=500&Response=json&User=Minnie.lee89@gmail.com&Version=2.7
     body:
       encoding: US-ASCII
       string: ''
@@ -12,7 +12,7 @@ http_interactions:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - '*/*'
+      - "*/*"
   response:
     status:
       code: 200
@@ -21,15 +21,15 @@ http_interactions:
       Server:
       - nginx Vayant
       Date:
-      - Thu, 06 Aug 2015 00:27:06 GMT
+      - Fri, 07 Aug 2015 21:29:13 GMT
       Content-Type:
       - application/json
       Content-Length:
-      - '1606'
+      - '555'
       Connection:
       - keep-alive
       Access-Control-Allow-Origin:
-      - '*'
+      - "*"
       Access-Control-Allow-Methods:
       - OPTIONS, POST, GET, PUT, PATCH, DELETE
       Access-Control-Allow-Headers:
@@ -37,103 +37,13 @@ http_interactions:
     body:
       encoding: UTF-8
       string: '{"Version":2.7, "Doctype":"FastSearchResponse","Source":"FastSearch",
-        "Journeys":[[{"Price":{"Base":{"sum":379.54,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":73.67,"cur":"USD"},"Total":{"sum":453.21,"cur":"USD"}},
-        "OutboundPrice":{"Base":{"sum":161.86,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":22.60,"cur":"USD"},"Total":{"sum":184.46,"cur":"USD"}},
-        "InboundPrice":{"Base":{"sum":217.68,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":22.60,"cur":"USD"},"Total":{"sum":240.28,"cur":"USD"}},
-        "PlatingCarrier":"DL","Flights":[{"id":1,"ocxr":"DL","mcxr":"DL","own":"DL","rbd":"X","seats":1,"num":"1645","dep":"2015-08-06T13:55:00","arr":"2015-08-06T18:45:00","org":"DEN","dst":"DTW","seg":1,"HiddenStops":{"Count":0,"Location":[]}},{"id":2,"ocxr":"DL","mcxr":"DL","own":"DL","rbd":"X","seats":1,"num":"0021","dep":"2015-08-06T20:10:00","arr":"2015-08-06T23:09:00","org":"DTW","dst":"FLL","seg":1,"HiddenStops":{"Count":0,"Location":[]}},{"id":3,"ocxr":"DL","mcxr":"DL","own":"DL","rbd":"Q","seats":1,"num":"1527","dep":"2015-08-13T18:45:00","arr":"2015-08-13T20:50:00","org":"FLL","dst":"ATL","seg":2,"HiddenStops":{"Count":0,"Location":[]}},{"id":4,"ocxr":"DL","mcxr":"DL","own":"DL","rbd":"Q","seats":1,"num":"2103","dep":"2015-08-13T21:55:00","arr":"2015-08-13T23:14:00","org":"ATL","dst":"DEN","seg":2,"HiddenStops":{"Count":0,"Location":[]}}],
-        "Fares":[{"FBC":"XA00A0VD","Carrier":"DL","Cabin":"Economy","Orig":"DEN","Dest":"FLL","PassengerIds":[1],"Flights":[1,2]},{"FBC":"QA07A0UD","Carrier":"DL","Cabin":"Economy","Orig":"FLL","Dest":"DEN","PassengerIds":[1],"Flights":[3,4]}],
-        "Passengers":[{"Id":1,"Type":"ADT","Price":{"Base":{"sum":379.54,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":73.67,"cur":"USD"},"Total":{"sum":453.21,"cur":"USD"}}}],
-        "TicketingFees":{}}],[{"Price":{"Base":{"sum":422.32,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":59.87,"cur":"USD"},"Total":{"sum":482.19,"cur":"USD"}},
+        "Journeys":[[{"Price":{"Base":{"sum":427.91,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":67.29,"cur":"USD"},"Total":{"sum":495.20,"cur":"USD"}},
         "OutboundPrice":{"Base":{"sum":326.51,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":14.10,"cur":"USD"},"Total":{"sum":340.61,"cur":"USD"}},
-        "InboundPrice":{"Base":{"sum":95.81,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":14.10,"cur":"USD"},"Total":{"sum":109.91,"cur":"USD"}},
-        "PlatingCarrier":"UA","Flights":[{"id":1,"ocxr":"UA","mcxr":"UA","own":"UA","rbd":"H","seats":9,"num":"0410","dep":"2015-08-06T09:58:00","arr":"2015-08-06T15:04:00","org":"DEN","dst":"ATL","seg":1,"HiddenStops":{"Count":0,"Location":[]}},{"id":2,"ocxr":"UA","mcxr":"UA","own":"UA","rbd":"G","seats":9,"num":"1568","dep":"2015-08-20T08:57:00","arr":"2015-08-20T10:26:00","org":"ATL","dst":"DEN","seg":2,"HiddenStops":{"Count":0,"Location":[]}}],
-        "Fares":[{"FBC":"HAA00AKY","Carrier":"UA","Cabin":"Economy","Orig":"DEN","Dest":"ATL","PassengerIds":[1],"Flights":[1]},{"FBC":"GAA14AXS","Carrier":"UA","Cabin":"Economy","Orig":"ATL","Dest":"DEN","PassengerIds":[1],"Flights":[2]}],
-        "Passengers":[{"Id":1,"Type":"ADT","Price":{"Base":{"sum":422.32,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":59.87,"cur":"USD"},"Total":{"sum":482.19,"cur":"USD"}}}],
-        "TicketingFees":{}}],[{"Price":{"Base":{"sum":422.32,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":59.87,"cur":"USD"},"Total":{"sum":482.19,"cur":"USD"}},
-        "OutboundPrice":{"Base":{"sum":326.51,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":14.10,"cur":"USD"},"Total":{"sum":340.61,"cur":"USD"}},
-        "InboundPrice":{"Base":{"sum":95.81,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":14.10,"cur":"USD"},"Total":{"sum":109.91,"cur":"USD"}},
-        "PlatingCarrier":"UA","Flights":[{"id":1,"ocxr":"UA","mcxr":"UA","own":"UA","rbd":"H","seats":9,"num":"0410","dep":"2015-08-06T09:58:00","arr":"2015-08-06T15:04:00","org":"DEN","dst":"ATL","seg":1,"HiddenStops":{"Count":0,"Location":[]}},{"id":2,"ocxr":"G7","mcxr":"UA","own":"G7","rbd":"G","seats":9,"num":"3665","dep":"2015-08-20T19:43:00","arr":"2015-08-20T21:09:00","org":"ATL","dst":"DEN","seg":2,"HiddenStops":{"Count":0,"Location":[]}}],
-        "Fares":[{"FBC":"HAA00AKY","Carrier":"UA","Cabin":"Economy","Orig":"DEN","Dest":"ATL","PassengerIds":[1],"Flights":[1]},{"FBC":"GAA14AXS","Carrier":"UA","Cabin":"Economy","Orig":"ATL","Dest":"DEN","PassengerIds":[1],"Flights":[2]}],
-        "Passengers":[{"Id":1,"Type":"ADT","Price":{"Base":{"sum":422.32,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":59.87,"cur":"USD"},"Total":{"sum":482.19,"cur":"USD"}}}],
-        "TicketingFees":{}}],[{"Price":{"Base":{"sum":422.32,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":59.87,"cur":"USD"},"Total":{"sum":482.19,"cur":"USD"}},
-        "OutboundPrice":{"Base":{"sum":326.51,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":14.10,"cur":"USD"},"Total":{"sum":340.61,"cur":"USD"}},
-        "InboundPrice":{"Base":{"sum":95.81,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":14.10,"cur":"USD"},"Total":{"sum":109.91,"cur":"USD"}},
-        "PlatingCarrier":"UA","Flights":[{"id":1,"ocxr":"OO","mcxr":"UA","own":"OO","rbd":"H","seats":9,"num":"6303","dep":"2015-08-06T13:11:00","arr":"2015-08-06T18:16:00","org":"DEN","dst":"ATL","seg":1,"HiddenStops":{"Count":0,"Location":[]}},{"id":2,"ocxr":"UA","mcxr":"UA","own":"UA","rbd":"G","seats":9,"num":"1402","dep":"2015-08-20T16:45:00","arr":"2015-08-20T18:13:00","org":"ATL","dst":"DEN","seg":2,"HiddenStops":{"Count":0,"Location":[]}}],
-        "Fares":[{"FBC":"HAA00AKY","Carrier":"UA","Cabin":"Economy","Orig":"DEN","Dest":"ATL","PassengerIds":[1],"Flights":[1]},{"FBC":"GAA14AXS","Carrier":"UA","Cabin":"Economy","Orig":"ATL","Dest":"DEN","PassengerIds":[1],"Flights":[2]}],
-        "Passengers":[{"Id":1,"Type":"ADT","Price":{"Base":{"sum":422.32,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":59.87,"cur":"USD"},"Total":{"sum":482.19,"cur":"USD"}}}],
-        "TicketingFees":{}}],[{"Price":{"Base":{"sum":422.32,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":59.87,"cur":"USD"},"Total":{"sum":482.19,"cur":"USD"}},
-        "OutboundPrice":{"Base":{"sum":326.51,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":14.10,"cur":"USD"},"Total":{"sum":340.61,"cur":"USD"}},
-        "InboundPrice":{"Base":{"sum":95.81,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":14.10,"cur":"USD"},"Total":{"sum":109.91,"cur":"USD"}},
-        "PlatingCarrier":"UA","Flights":[{"id":1,"ocxr":"OO","mcxr":"UA","own":"OO","rbd":"H","seats":9,"num":"6303","dep":"2015-08-06T13:11:00","arr":"2015-08-06T18:16:00","org":"DEN","dst":"ATL","seg":1,"HiddenStops":{"Count":0,"Location":[]}},{"id":2,"ocxr":"G7","mcxr":"UA","own":"G7","rbd":"G","seats":9,"num":"3665","dep":"2015-08-20T19:43:00","arr":"2015-08-20T21:09:00","org":"ATL","dst":"DEN","seg":2,"HiddenStops":{"Count":0,"Location":[]}}],
-        "Fares":[{"FBC":"HAA00AKY","Carrier":"UA","Cabin":"Economy","Orig":"DEN","Dest":"ATL","PassengerIds":[1],"Flights":[1]},{"FBC":"GAA14AXS","Carrier":"UA","Cabin":"Economy","Orig":"ATL","Dest":"DEN","PassengerIds":[1],"Flights":[2]}],
-        "Passengers":[{"Id":1,"Type":"ADT","Price":{"Base":{"sum":422.32,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":59.87,"cur":"USD"},"Total":{"sum":482.19,"cur":"USD"}}}],
-        "TicketingFees":{}}],[{"Price":{"Base":{"sum":422.32,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":59.87,"cur":"USD"},"Total":{"sum":482.19,"cur":"USD"}},
-        "OutboundPrice":{"Base":{"sum":326.51,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":14.10,"cur":"USD"},"Total":{"sum":340.61,"cur":"USD"}},
-        "InboundPrice":{"Base":{"sum":95.81,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":14.10,"cur":"USD"},"Total":{"sum":109.91,"cur":"USD"}},
-        "PlatingCarrier":"UA","Flights":[{"id":1,"ocxr":"S5","mcxr":"UA","own":"S5","rbd":"H","seats":9,"num":"3905","dep":"2015-08-06T19:50:00","arr":"2015-08-07T00:57:00","org":"DEN","dst":"ATL","seg":1,"HiddenStops":{"Count":0,"Location":[]}},{"id":2,"ocxr":"G7","mcxr":"UA","own":"G7","rbd":"G","seats":9,"num":"3665","dep":"2015-08-20T19:43:00","arr":"2015-08-20T21:09:00","org":"ATL","dst":"DEN","seg":2,"HiddenStops":{"Count":0,"Location":[]}}],
-        "Fares":[{"FBC":"HAA00AKY","Carrier":"UA","Cabin":"Economy","Orig":"DEN","Dest":"ATL","PassengerIds":[1],"Flights":[1]},{"FBC":"GAA14AXS","Carrier":"UA","Cabin":"Economy","Orig":"ATL","Dest":"DEN","PassengerIds":[1],"Flights":[2]}],
-        "Passengers":[{"Id":1,"Type":"ADT","Price":{"Base":{"sum":422.32,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":59.87,"cur":"USD"},"Total":{"sum":482.19,"cur":"USD"}}}],
-        "TicketingFees":{}}],[{"Price":{"Base":{"sum":422.32,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":59.87,"cur":"USD"},"Total":{"sum":482.19,"cur":"USD"}},
-        "OutboundPrice":{"Base":{"sum":326.51,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":14.10,"cur":"USD"},"Total":{"sum":340.61,"cur":"USD"}},
-        "InboundPrice":{"Base":{"sum":95.81,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":14.10,"cur":"USD"},"Total":{"sum":109.91,"cur":"USD"}},
-        "PlatingCarrier":"UA","Flights":[{"id":1,"ocxr":"OO","mcxr":"UA","own":"OO","rbd":"H","seats":9,"num":"6303","dep":"2015-08-06T13:11:00","arr":"2015-08-06T18:16:00","org":"DEN","dst":"ATL","seg":1,"HiddenStops":{"Count":0,"Location":[]}},{"id":2,"ocxr":"UA","mcxr":"UA","own":"UA","rbd":"G","seats":9,"num":"1568","dep":"2015-08-20T08:57:00","arr":"2015-08-20T10:26:00","org":"ATL","dst":"DEN","seg":2,"HiddenStops":{"Count":0,"Location":[]}}],
-        "Fares":[{"FBC":"HAA00AKY","Carrier":"UA","Cabin":"Economy","Orig":"DEN","Dest":"ATL","PassengerIds":[1],"Flights":[1]},{"FBC":"GAA14AXS","Carrier":"UA","Cabin":"Economy","Orig":"ATL","Dest":"DEN","PassengerIds":[1],"Flights":[2]}],
-        "Passengers":[{"Id":1,"Type":"ADT","Price":{"Base":{"sum":422.32,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":59.87,"cur":"USD"},"Total":{"sum":482.19,"cur":"USD"}}}],
-        "TicketingFees":{}}],[{"Price":{"Base":{"sum":408.36,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":75.83,"cur":"USD"},"Total":{"sum":484.19,"cur":"USD"}},
-        "OutboundPrice":{"Base":{"sum":230.69,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":22.60,"cur":"USD"},"Total":{"sum":253.29,"cur":"USD"}},
-        "InboundPrice":{"Base":{"sum":177.67,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":22.60,"cur":"USD"},"Total":{"sum":200.27,"cur":"USD"}},
-        "PlatingCarrier":"AA","Flights":[{"id":1,"ocxr":"AA","mcxr":"AA","own":"AA","rbd":"S","seats":2,"num":"1184","dep":"2015-08-06T14:22:00","arr":"2015-08-06T17:24:00","org":"DEN","dst":"DFW","seg":1,"HiddenStops":{"Count":0,"Location":[]}},{"id":2,"ocxr":"YV","mcxr":"AA","own":"YV","rbd":"S","seats":2,"num":"5701","dep":"2015-08-06T18:12:00","arr":"2015-08-06T19:23:00","org":"DFW","dst":"IAH","seg":1,"HiddenStops":{"Count":0,"Location":[]}},{"id":3,"ocxr":"AA","mcxr":"US","own":"YV","rbd":"Q","seats":3,"num":"5769","dep":"2015-08-13T05:00:00","arr":"2015-08-13T06:13:00","org":"HOU","dst":"DFW","seg":2,"HiddenStops":{"Count":0,"Location":[]}},{"id":4,"ocxr":"AA","mcxr":"US","own":"AA","rbd":"Q","seats":3,"num":"2374","dep":"2015-08-13T07:25:00","arr":"2015-08-13T08:34:00","org":"DFW","dst":"DEN","seg":2,"HiddenStops":{"Count":0,"Location":[]}}],
-        "Fares":[{"FBC":"SA00ZNG1","Carrier":"AA","Cabin":"Economy","Orig":"DEN","Dest":"HOU","PassengerIds":[1],"Flights":[1,2]},{"FBC":"QA07ZNG3","Carrier":"US","Cabin":"Economy","Orig":"HOU","Dest":"DEN","PassengerIds":[1],"Flights":[3,4]}],
-        "Passengers":[{"Id":1,"Type":"ADT","Price":{"Base":{"sum":408.36,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":75.83,"cur":"USD"},"Total":{"sum":484.19,"cur":"USD"}}}],
-        "TicketingFees":{}}],[{"Price":{"Base":{"sum":408.36,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":75.83,"cur":"USD"},"Total":{"sum":484.19,"cur":"USD"}},
-        "OutboundPrice":{"Base":{"sum":230.69,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":22.60,"cur":"USD"},"Total":{"sum":253.29,"cur":"USD"}},
-        "InboundPrice":{"Base":{"sum":177.67,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":22.60,"cur":"USD"},"Total":{"sum":200.27,"cur":"USD"}},
-        "PlatingCarrier":"AA","Flights":[{"id":1,"ocxr":"AA","mcxr":"AA","own":"AA","rbd":"S","seats":2,"num":"1184","dep":"2015-08-06T14:22:00","arr":"2015-08-06T17:24:00","org":"DEN","dst":"DFW","seg":1,"HiddenStops":{"Count":0,"Location":[]}},{"id":2,"ocxr":"YV","mcxr":"AA","own":"YV","rbd":"S","seats":2,"num":"5701","dep":"2015-08-06T18:12:00","arr":"2015-08-06T19:23:00","org":"DFW","dst":"IAH","seg":1,"HiddenStops":{"Count":0,"Location":[]}},{"id":3,"ocxr":"AA","mcxr":"AA","own":"AA","rbd":"Q","seats":3,"num":"1623","dep":"2015-08-13T05:00:00","arr":"2015-08-13T06:12:00","org":"IAH","dst":"DFW","seg":2,"HiddenStops":{"Count":0,"Location":[]}},{"id":4,"ocxr":"AA","mcxr":"AA","own":"AA","rbd":"Q","seats":3,"num":"2374","dep":"2015-08-13T07:25:00","arr":"2015-08-13T08:34:00","org":"DFW","dst":"DEN","seg":2,"HiddenStops":{"Count":0,"Location":[]}}],
-        "Fares":[{"FBC":"SA00ZNG1","Carrier":"AA","Cabin":"Economy","Orig":"DEN","Dest":"HOU","PassengerIds":[1],"Flights":[1,2]},{"FBC":"QA07ZNG3","Carrier":"AA","Cabin":"Economy","Orig":"HOU","Dest":"DEN","PassengerIds":[1],"Flights":[3,4]}],
-        "Passengers":[{"Id":1,"Type":"ADT","Price":{"Base":{"sum":408.36,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":75.83,"cur":"USD"},"Total":{"sum":484.19,"cur":"USD"}}}],
-        "TicketingFees":{}}],[{"Price":{"Base":{"sum":408.36,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":75.83,"cur":"USD"},"Total":{"sum":484.19,"cur":"USD"}},
-        "OutboundPrice":{"Base":{"sum":230.69,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":22.60,"cur":"USD"},"Total":{"sum":253.29,"cur":"USD"}},
-        "InboundPrice":{"Base":{"sum":177.67,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":22.60,"cur":"USD"},"Total":{"sum":200.27,"cur":"USD"}},
-        "PlatingCarrier":"US","Flights":[{"id":1,"ocxr":"AA","mcxr":"US","own":"AA","rbd":"S","seats":1,"num":"2318","dep":"2015-08-06T08:00:00","arr":"2015-08-06T10:59:00","org":"DEN","dst":"DFW","seg":1,"HiddenStops":{"Count":0,"Location":[]}},{"id":2,"ocxr":"AA","mcxr":"US","own":"AA","rbd":"S","seats":1,"num":"0976","dep":"2015-08-06T13:00:00","arr":"2015-08-06T14:08:00","org":"DFW","dst":"IAH","seg":1,"HiddenStops":{"Count":0,"Location":[]}},{"id":3,"ocxr":"AA","mcxr":"AA","own":"AA","rbd":"Q","seats":3,"num":"1623","dep":"2015-08-13T05:00:00","arr":"2015-08-13T06:12:00","org":"IAH","dst":"DFW","seg":2,"HiddenStops":{"Count":0,"Location":[]}},{"id":4,"ocxr":"AA","mcxr":"AA","own":"AA","rbd":"Q","seats":3,"num":"2374","dep":"2015-08-13T07:25:00","arr":"2015-08-13T08:34:00","org":"DFW","dst":"DEN","seg":2,"HiddenStops":{"Count":0,"Location":[]}}],
-        "Fares":[{"FBC":"SA00ZNG1","Carrier":"US","Cabin":"Economy","Orig":"DEN","Dest":"HOU","PassengerIds":[1],"Flights":[1,2]},{"FBC":"QA07ZNG3","Carrier":"AA","Cabin":"Economy","Orig":"HOU","Dest":"DEN","PassengerIds":[1],"Flights":[3,4]}],
-        "Passengers":[{"Id":1,"Type":"ADT","Price":{"Base":{"sum":408.36,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":75.83,"cur":"USD"},"Total":{"sum":484.19,"cur":"USD"}}}],
-        "TicketingFees":{}}],[{"Price":{"Base":{"sum":422.32,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":66.87,"cur":"USD"},"Total":{"sum":489.19,"cur":"USD"}},
-        "OutboundPrice":{"Base":{"sum":326.51,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":14.10,"cur":"USD"},"Total":{"sum":340.61,"cur":"USD"}},
-        "InboundPrice":{"Base":{"sum":95.81,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":21.10,"cur":"USD"},"Total":{"sum":116.91,"cur":"USD"}},
-        "PlatingCarrier":"DL","Flights":[{"id":1,"ocxr":"DL","mcxr":"DL","own":"DL","rbd":"Q","seats":9,"num":"1616","dep":"2015-08-06T07:40:00","arr":"2015-08-06T12:35:00","org":"DEN","dst":"ATL","seg":1,"HiddenStops":{"Count":0,"Location":[]}},{"id":2,"ocxr":"US","mcxr":"AA","own":"US","rbd":"O","seats":7,"num":"0658","dep":"2015-08-20T05:50:00","arr":"2015-08-20T06:57:00","org":"ATL","dst":"CLT","seg":2,"HiddenStops":{"Count":0,"Location":[]}},{"id":3,"ocxr":"US","mcxr":"AA","own":"US","rbd":"O","seats":7,"num":"0428","dep":"2015-08-20T07:34:00","arr":"2015-08-20T09:03:00","org":"CLT","dst":"DEN","seg":2,"HiddenStops":{"Count":0,"Location":[]}}],
-        "Fares":[{"FBC":"QA00X0RA","Carrier":"DL","Cabin":"Economy","Orig":"DEN","Dest":"ATL","PassengerIds":[1],"Flights":[1]},{"FBC":"OA14ZSH5","Carrier":"AA","Cabin":"Economy","Orig":"ATL","Dest":"DEN","PassengerIds":[1],"Flights":[2,3]}],
-        "Passengers":[{"Id":1,"Type":"ADT","Price":{"Base":{"sum":422.32,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":66.87,"cur":"USD"},"Total":{"sum":489.19,"cur":"USD"}}}],
-        "TicketingFees":{}}],[{"Price":{"Base":{"sum":422.32,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":66.87,"cur":"USD"},"Total":{"sum":489.19,"cur":"USD"}},
-        "OutboundPrice":{"Base":{"sum":326.51,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":14.10,"cur":"USD"},"Total":{"sum":340.61,"cur":"USD"}},
-        "InboundPrice":{"Base":{"sum":95.81,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":21.10,"cur":"USD"},"Total":{"sum":116.91,"cur":"USD"}},
-        "PlatingCarrier":"UA","Flights":[{"id":1,"ocxr":"UA","mcxr":"UA","own":"UA","rbd":"H","seats":9,"num":"0410","dep":"2015-08-06T09:58:00","arr":"2015-08-06T15:04:00","org":"DEN","dst":"ATL","seg":1,"HiddenStops":{"Count":0,"Location":[]}},{"id":2,"ocxr":"US","mcxr":"US","own":"US","rbd":"O","seats":9,"num":"0658","dep":"2015-08-20T05:50:00","arr":"2015-08-20T06:57:00","org":"ATL","dst":"CLT","seg":2,"HiddenStops":{"Count":0,"Location":[]}},{"id":3,"ocxr":"US","mcxr":"US","own":"US","rbd":"O","seats":9,"num":"0428","dep":"2015-08-20T07:34:00","arr":"2015-08-20T09:03:00","org":"CLT","dst":"DEN","seg":2,"HiddenStops":{"Count":0,"Location":[]}}],
-        "Fares":[{"FBC":"HAA00AKY","Carrier":"UA","Cabin":"Economy","Orig":"DEN","Dest":"ATL","PassengerIds":[1],"Flights":[1]},{"FBC":"OA14ZSH5","Carrier":"US","Cabin":"Economy","Orig":"ATL","Dest":"DEN","PassengerIds":[1],"Flights":[2,3]}],
-        "Passengers":[{"Id":1,"Type":"ADT","Price":{"Base":{"sum":422.32,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":66.87,"cur":"USD"},"Total":{"sum":489.19,"cur":"USD"}}}],
-        "TicketingFees":{}}],[{"Price":{"Base":{"sum":422.32,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":66.87,"cur":"USD"},"Total":{"sum":489.19,"cur":"USD"}},
-        "OutboundPrice":{"Base":{"sum":326.51,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":14.10,"cur":"USD"},"Total":{"sum":340.61,"cur":"USD"}},
-        "InboundPrice":{"Base":{"sum":95.81,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":21.10,"cur":"USD"},"Total":{"sum":116.91,"cur":"USD"}},
-        "PlatingCarrier":"UA","Flights":[{"id":1,"ocxr":"S5","mcxr":"UA","own":"S5","rbd":"H","seats":9,"num":"3905","dep":"2015-08-06T19:50:00","arr":"2015-08-07T00:57:00","org":"DEN","dst":"ATL","seg":1,"HiddenStops":{"Count":0,"Location":[]}},{"id":2,"ocxr":"US","mcxr":"AA","own":"US","rbd":"O","seats":7,"num":"0658","dep":"2015-08-20T05:50:00","arr":"2015-08-20T06:57:00","org":"ATL","dst":"CLT","seg":2,"HiddenStops":{"Count":0,"Location":[]}},{"id":3,"ocxr":"US","mcxr":"AA","own":"US","rbd":"O","seats":7,"num":"0428","dep":"2015-08-20T07:34:00","arr":"2015-08-20T09:03:00","org":"CLT","dst":"DEN","seg":2,"HiddenStops":{"Count":0,"Location":[]}}],
-        "Fares":[{"FBC":"HAA00AKY","Carrier":"UA","Cabin":"Economy","Orig":"DEN","Dest":"ATL","PassengerIds":[1],"Flights":[1]},{"FBC":"OA14ZSH5","Carrier":"AA","Cabin":"Economy","Orig":"ATL","Dest":"DEN","PassengerIds":[1],"Flights":[2,3]}],
-        "Passengers":[{"Id":1,"Type":"ADT","Price":{"Base":{"sum":422.32,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":66.87,"cur":"USD"},"Total":{"sum":489.19,"cur":"USD"}}}],
-        "TicketingFees":{}}],[{"Price":{"Base":{"sum":422.32,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":66.87,"cur":"USD"},"Total":{"sum":489.19,"cur":"USD"}},
-        "OutboundPrice":{"Base":{"sum":326.51,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":14.10,"cur":"USD"},"Total":{"sum":340.61,"cur":"USD"}},
-        "InboundPrice":{"Base":{"sum":95.81,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":21.10,"cur":"USD"},"Total":{"sum":116.91,"cur":"USD"}},
-        "PlatingCarrier":"DL","Flights":[{"id":1,"ocxr":"DL","mcxr":"DL","own":"DL","rbd":"Q","seats":9,"num":"1616","dep":"2015-08-06T07:40:00","arr":"2015-08-06T12:35:00","org":"DEN","dst":"ATL","seg":1,"HiddenStops":{"Count":0,"Location":[]}},{"id":2,"ocxr":"US","mcxr":"US","own":"US","rbd":"O","seats":9,"num":"0658","dep":"2015-08-20T05:50:00","arr":"2015-08-20T06:57:00","org":"ATL","dst":"CLT","seg":2,"HiddenStops":{"Count":0,"Location":[]}},{"id":3,"ocxr":"US","mcxr":"US","own":"US","rbd":"O","seats":9,"num":"0428","dep":"2015-08-20T07:34:00","arr":"2015-08-20T09:03:00","org":"CLT","dst":"DEN","seg":2,"HiddenStops":{"Count":0,"Location":[]}}],
-        "Fares":[{"FBC":"QA00X0RA","Carrier":"DL","Cabin":"Economy","Orig":"DEN","Dest":"ATL","PassengerIds":[1],"Flights":[1]},{"FBC":"OA14ZSH5","Carrier":"US","Cabin":"Economy","Orig":"ATL","Dest":"DEN","PassengerIds":[1],"Flights":[2,3]}],
-        "Passengers":[{"Id":1,"Type":"ADT","Price":{"Base":{"sum":422.32,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":66.87,"cur":"USD"},"Total":{"sum":489.19,"cur":"USD"}}}],
-        "TicketingFees":{}}],[{"Price":{"Base":{"sum":422.32,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":66.87,"cur":"USD"},"Total":{"sum":489.19,"cur":"USD"}},
-        "OutboundPrice":{"Base":{"sum":326.51,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":14.10,"cur":"USD"},"Total":{"sum":340.61,"cur":"USD"}},
-        "InboundPrice":{"Base":{"sum":95.81,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":21.10,"cur":"USD"},"Total":{"sum":116.91,"cur":"USD"}},
-        "PlatingCarrier":"DL","Flights":[{"id":1,"ocxr":"DL","mcxr":"DL","own":"DL","rbd":"Q","seats":1,"num":"1916","dep":"2015-08-06T13:05:00","arr":"2015-08-06T18:05:00","org":"DEN","dst":"ATL","seg":1,"HiddenStops":{"Count":0,"Location":[]}},{"id":2,"ocxr":"US","mcxr":"AA","own":"US","rbd":"O","seats":7,"num":"0658","dep":"2015-08-20T05:50:00","arr":"2015-08-20T06:57:00","org":"ATL","dst":"CLT","seg":2,"HiddenStops":{"Count":0,"Location":[]}},{"id":3,"ocxr":"US","mcxr":"AA","own":"US","rbd":"O","seats":7,"num":"0428","dep":"2015-08-20T07:34:00","arr":"2015-08-20T09:03:00","org":"CLT","dst":"DEN","seg":2,"HiddenStops":{"Count":0,"Location":[]}}],
-        "Fares":[{"FBC":"QA00X0RA","Carrier":"DL","Cabin":"Economy","Orig":"DEN","Dest":"ATL","PassengerIds":[1],"Flights":[1]},{"FBC":"OA14ZSH5","Carrier":"AA","Cabin":"Economy","Orig":"ATL","Dest":"DEN","PassengerIds":[1],"Flights":[2,3]}],
-        "Passengers":[{"Id":1,"Type":"ADT","Price":{"Base":{"sum":422.32,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":66.87,"cur":"USD"},"Total":{"sum":489.19,"cur":"USD"}}}],
-        "TicketingFees":{}}],[{"Price":{"Base":{"sum":421.40,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":76.81,"cur":"USD"},"Total":{"sum":498.21,"cur":"USD"}},
-        "OutboundPrice":{"Base":{"sum":221.40,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":22.60,"cur":"USD"},"Total":{"sum":244.00,"cur":"USD"}},
-        "InboundPrice":{"Base":{"sum":200.00,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":22.60,"cur":"USD"},"Total":{"sum":222.60,"cur":"USD"}},
-        "PlatingCarrier":"DL","Flights":[{"id":1,"ocxr":"DL","mcxr":"DL","own":"DL","rbd":"T","seats":2,"num":"1616","dep":"2015-08-06T07:40:00","arr":"2015-08-06T12:35:00","org":"DEN","dst":"ATL","seg":1,"HiddenStops":{"Count":0,"Location":[]}},{"id":2,"ocxr":"DL","mcxr":"DL","own":"DL","rbd":"T","seats":2,"num":"2372","dep":"2015-08-06T13:35:00","arr":"2015-08-06T15:04:00","org":"ATL","dst":"TPA","seg":1,"HiddenStops":{"Count":0,"Location":[]}},{"id":3,"ocxr":"DL","mcxr":"DL","own":"DL","rbd":"T","seats":4,"num":"2323","dep":"2015-08-13T05:15:00","arr":"2015-08-13T06:40:00","org":"TPA","dst":"ATL","seg":2,"HiddenStops":{"Count":0,"Location":[]}},{"id":4,"ocxr":"DL","mcxr":"DL","own":"DL","rbd":"T","seats":4,"num":"1816","dep":"2015-08-13T08:15:00","arr":"2015-08-13T09:21:00","org":"ATL","dst":"DEN","seg":2,"HiddenStops":{"Count":0,"Location":[]}}],
-        "Fares":[{"FBC":"TA00A0VD","Carrier":"DL","Cabin":"Economy","Orig":"DEN","Dest":"TPA","PassengerIds":[1],"Flights":[1,2]},{"FBC":"TA07A0VD","Carrier":"DL","Cabin":"Economy","Orig":"TPA","Dest":"DEN","PassengerIds":[1],"Flights":[3,4]}],
-        "Passengers":[{"Id":1,"Type":"ADT","Price":{"Base":{"sum":421.40,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":76.81,"cur":"USD"},"Total":{"sum":498.21,"cur":"USD"}}}],
+        "InboundPrice":{"Base":{"sum":101.40,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":21.10,"cur":"USD"},"Total":{"sum":122.50,"cur":"USD"}},
+        "PlatingCarrier":"UA","Flights":[{"id":1,"ocxr":"S5","mcxr":"UA","own":"S5","rbd":"H","seats":9,"num":"3905","dep":"2015-08-07T19:50:00","arr":"2015-08-08T00:57:00","org":"DEN","dst":"ATL","seg":1,"HiddenStops":{"Count":0,"Location":[]}},{"id":2,"ocxr":"US","mcxr":"AA","own":"US","rbd":"O","seats":7,"num":"0658","dep":"2015-08-21T05:50:00","arr":"2015-08-21T06:57:00","org":"ATL","dst":"CLT","seg":2,"HiddenStops":{"Count":0,"Location":[]}},{"id":3,"ocxr":"US","mcxr":"AA","own":"US","rbd":"O","seats":7,"num":"0428","dep":"2015-08-21T07:34:00","arr":"2015-08-21T09:03:00","org":"CLT","dst":"DEN","seg":2,"HiddenStops":{"Count":0,"Location":[]}}],
+        "Fares":[{"FBC":"HAA00AKY","Carrier":"UA","Cabin":"Economy","Orig":"DEN","Dest":"ATL","PassengerIds":[1],"Flights":[1]},{"FBC":"OA00ZNH5","Carrier":"AA","Cabin":"Economy","Orig":"ATL","Dest":"DEN","PassengerIds":[1],"Flights":[2,3]}],
+        "Passengers":[{"Id":1,"Type":"ADT","Price":{"Base":{"sum":427.91,"cur":"USD"},"Yqyr":{"sum":0.00,"cur":"USD"},"Tax":{"sum":67.29,"cur":"USD"},"Total":{"sum":495.20,"cur":"USD"}}}],
         "TicketingFees":{}}]]}'
     http_version: 
-  recorded_at: Thu, 06 Aug 2015 00:27:06 GMT
+  recorded_at: Fri, 07 Aug 2015 21:29:14 GMT
 recorded_with: VCR 2.9.3

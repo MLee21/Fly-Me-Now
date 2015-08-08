@@ -2,61 +2,55 @@ require "rails_helper"
 require "pp"
 
 RSpec.describe FlightsController do 
+  vcr_options = { allow_playback_repeats: true }
   describe "#index" do 
     it "will return the flights from origin airport" do 
-      VCR.use_cassette("flight_controller_data", re_record_interval: 1000000) do 
+      VCR.use_cassette("flight_controller_data", vcr_options) do 
         get :index, {city: "Denver"}
         expect(response.status).to eq(200)
-        trips = JSON.parse(response.body)
-        expect(trips.first).to eq({
-          Total_Price: 453.21,
-          Flights: [
-            [
-              {
-                Origin: "DEN",
-                Destination: "DTW",
-                DepartureTime: "2015-08-06T13:55:00",
-                Arrival: "2015-08-06T18:45:00",
-                
-                Carrier: "DL",
-                Seats: 1,
-                Flight_Number: 1645
-              },
-              {
-                Origin: "DTW",
-                Destination: "FLL",
-                DepartureTime: "2015-08-06T20:10:00",
-                Arrival: "2015-08-06T23:09:00",
-                Carrier: "DL",
-                Seats: 1,
-                Flight_Number: 0021
-              }
-            ],
-            [
-              {
-                Origin: "FLL",
-                Destination: "ATL",
-                DepartureTime: "2015-08-13T18:45:00",
-                Arrival: "2015-08-13T20:50:00",
-                Carrier: "DL",
-                Seats: 1,
-                Flight_Number: 1527
-              },
-              {
-                Origin: "ATL",
-                Destination: "DEN",
-                DepartureTime: "2015-08-13T21:55:00",
-                Arrival: "2015-08-13T23:14:00",
-                Carrier: "DL",
-                Seats: 1,
-                Flight_Number: 2103
-              }
-            ]
+        trip_choice = JSON.parse(response.body)
+        expect(trip_choice).to eq({
+          "Price" => {
+            "Total" => {
+              "sum"=> 369.19,
+            }
+          },
+          "Flights" => [
+            {
+              "Origin" => "DEN",
+              "Destination" => "CLT",
+              "DepartureTime" => "2015-08-08T16:00:00",
+              "Arrival" => "2015-08-08T21:18:00",
+              "Carrier" => "AA",
+              "Flight_Number" => "1901"
+            },
+            {
+              "Origin" => "CLT",
+              "Destination" => "FLL",
+              "DepartureTime" => "2015-08-08T22:05:00",
+              "Arrival" => "2015-08-08T23:56:00",
+              "Carrier" => "AA",
+              "Flight_Number" => "1717"
+            },
+            {
+              "Origin" => "FLL",
+              "Destination" => "CLT",
+              "DepartureTime" => "2015-08-15T14:50:00",
+              "Arrival" => "2015-08-15T16:59:00",
+              "Carrier" => "US",
+              "Flight_Number" => "0609"
+            },
+            {
+              "Origin" => "CLT",
+              "Destination" => "DEN",
+              "DepartureTime" => "2015-08-15T20:25:00",
+              "Arrival" => "2015-08-15T21:56:00",
+              "Carrier" => "US",
+              "Flight_Number" => "0447"
+            }
           ]
         }) 
         
-        # pp JSON.parse(response.body)
-
       end
     end
   end

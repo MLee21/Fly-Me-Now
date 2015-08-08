@@ -1,14 +1,15 @@
 require 'time'
 
 class FlightInformationService
-  attr_reader :connection, :date
+  attr_reader :connection, :date, :location
 
-  def initialize
+  def initialize(location)
+    @location = location
     @connection = Hurley::Client.new("http://fs-json.demo.vayant.com")
     @date = Time.now.utc.iso8601
   end
 
-  def flights_by_location(location)
+  def flights_by_location
     response = connection.get("/", {
       Version: 2.7,
       DepartureFrom: format_date,
@@ -18,25 +19,15 @@ class FlightInformationService
       PriceMax: 500, 
       Response: "json",
       Environment: "fast_search_1_0",
-      })
-    response_body = parse(response.body)
-    format_flight_data(response_body)
-
+    })
+    journey = parse(response.body)["Journeys"][0][0]
+    TripChoice.new(journey)
   end
 
   private
 
-  def format_flight_data(data)
-
-
-  end
-
-  def deal_data(data)
-    data[:Journeys].map { |journey| Deal.new(journey.first) }
-  end
-
   def parse(response)
-    JSON.parse(response, symbolize_names: true)
+    JSON.parse(response)
   end
 
   def format_date

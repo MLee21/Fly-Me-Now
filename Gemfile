@@ -15,6 +15,8 @@ gem 'figaro'
 gem 'responders'
 gem 'flipclockjs-rails', '~> 0.7.7'
 gem 'angularjs-foundation-rails'
+gem 'sidekiq'
+gem 'sinatra'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-angular', '1.2.16'
@@ -23,12 +25,12 @@ source 'https://rails-assets.org' do
 end
 
 group :development, :test do
-  gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'capybara'
   gem 'poltergeist'
   gem 'launchy'
+  gem 'pry-byebug'
   gem 'pry-rails'
 end
 
@@ -38,5 +40,6 @@ group :test do
   gem 'rspec-rails'
   gem 'mocha'
   gem 'jasmine'
+  gem 'timecop'
 end
 
