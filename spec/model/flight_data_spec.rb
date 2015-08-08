@@ -3,22 +3,9 @@ require "rails_helper"
 RSpec.describe FlightData do 
   describe "#original_airport" do 
     it "returns the city of origin" do 
-     
-      data = { "Flights"=>
-        [
-          {
-            "org"=>"DEN",
-            "dst"=>"ATL"
-          },
-          {
-            "org"=>"ATL",
-            "dst"=>"CLT"
-          },
-          {
-            "org"=>"CLT",
-            "dst"=>"DEN"
-          }
-        ]
+      data = {
+        "org"=>"DEN",
+        "dst"=>"ATL"
       }
 
       flight = FlightData.new(data)
@@ -30,22 +17,10 @@ RSpec.describe FlightData do
 
   describe "#destination" do 
     it "returns the destination city" do 
-       data = { "Flights"=>
-        [
-          {
+      data = {
             "org"=>"DEN",
             "dst"=>"ATL"
-          },
-          {
-            "org"=>"ATL",
-            "dst"=>"CLT"
-          },
-          {
-            "org"=>"CLT",
-            "dst"=>"DEN"
           }
-        ]
-      }
 
       flight = FlightData.new(data)
       destination = flight.destination
@@ -56,19 +31,9 @@ RSpec.describe FlightData do
 
   describe "#number" do 
     it "returns the flight_number" do 
-       data = { "Flights"=>
-        [
-          {
+       data = {
            "num"=>"3905"
-          },
-          {
-         "num"=>"3906"
-          },
-          {
-        "num"=>"3995"
           }
-        ]
-      }
 
       flight = FlightData.new(data)
       number = flight.number
@@ -79,18 +44,8 @@ RSpec.describe FlightData do
 
   describe "#departure_time" do 
     it "returns the departure_time" do 
-       data = { "Flights"=>
-        [
-          {
-           "dep"=>"2015-08-07T19:50:00"
-          },
-          {
-         "dep"=>"2015-08-07T19:50:00"
-          },
-          {
+      data = {
         "dep"=>"2015-08-07T19:50:00"
-          }
-        ]
       }
 
       flight = FlightData.new(data)
@@ -102,24 +57,13 @@ RSpec.describe FlightData do
 
   describe "#arrival_time" do 
     it "returns the arrival_time" do 
-       data = { "Flights"=>
-        [
-          {
-          "dep"=>"2015-08-07T19:50:00"
-          },
-          {
-         "dep"=>"2015-08-07T19:50:00"
-          },
-          {
-        "dep"=>"2015-08-07T19:50:00"
+       data = {
+          "arr"=>"2015-08-08T00:57:00"
           }
-        ]
-      }
+          flight = FlightData.new(data)
+       arrival_time = flight.arrival_time
 
-      flight = FlightData.new(data)
-       departure_time = flight.departure_time
-
-      expect(departure_time).to eq("2015-08-07T19:50:00")
+      expect(arrival_time).to eq("2015-08-08T00:57:00")
     end
   end
 end

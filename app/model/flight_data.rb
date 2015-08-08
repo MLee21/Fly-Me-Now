@@ -6,19 +6,37 @@ class FlightData
   end
 
   def original_airport
-    flight_data["Flights"].first["org"]
+    flight_data["org"]
   end
 
   def destination
-    flight_data["Flights"].first["dst"] 
+    flight_data["dst"] 
   end
 
   def number
-    flight_data["Flights"].first["num"] 
+    flight_data["num"] 
   end
 
   def departure_time
-    flight_data["Flights"].first["dep"] 
+    flight_data["dep"] 
   end
 
+  def arrival_time
+    flight_data["arr"] 
+  end
+
+  def airline
+    flight_data["mcxr"]
+  end
+
+  def as_json(options = {})
+    {
+      "Origin" => original_airport,
+      "Destination" => destination,
+      "DepartureTime" => departure_time ,
+      "Arrival" => arrival_time, 
+      "Carrier" => airline, 
+      "Flight_Number" => number
+    } 
+  end
 end

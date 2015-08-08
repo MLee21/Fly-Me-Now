@@ -9,12 +9,14 @@ class TripChoice
     journey["Price"]["Total"]["sum"]
   end
 
-  def flight_data
+  def flights
     #returns all Flight objects for one trip
     journey["Flights"].map { |flight| FlightData.new(flight) }
 
   end
 
+  def as_json(options={})
+    { "Price" => {"Total"=> { "sum"=> roundtrip_cost }}, "Flights" => flights }
 
-
+  end
 end

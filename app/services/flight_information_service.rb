@@ -20,14 +20,14 @@ class FlightInformationService
       Response: "json",
       Environment: "fast_search_1_0",
     })
-    journey = parse(response.body)[:Journeys][0][0]
+    journey = parse(response.body)["Journeys"][0][0]
     TripChoice.new(journey)
   end
 
   private
 
   def parse(response)
-    JSON.parse(response, symbolize_names: true)
+    JSON.parse(response)
   end
 
   def format_date

@@ -12,8 +12,8 @@ RSpec.describe TripChoice do
     end
   end
 
-    it "calls Flight.new with flight_data from the journey" do
-      flight_data =  [
+    it "calls Flight.new with flights from the journey" do
+      flights =  [
         {
           "arr1"=>"2015-08-08T00:57:00",
           "org"=>"DEN",
@@ -32,17 +32,17 @@ RSpec.describe TripChoice do
       ]
 
       journey = { 
-        "Flights"=> flight_data
+        "Flights"=> flights
       }
 
 
       trip = TripChoice.new(journey)
       allow(FlightData).to receive(:new)
 
-      trip.flight_data
-      expect(FlightData).to have_received(:new).with(flight_data.first) 
-      expect(FlightData).to have_received(:new).with(flight_data.second) 
-      expect(FlightData).to have_received(:new).with(flight_data.third) 
+      trip.flights
+      expect(FlightData).to have_received(:new).with(flights.first) 
+      expect(FlightData).to have_received(:new).with(flights.second) 
+      expect(FlightData).to have_received(:new).with(flights.third) 
     end
 
 end
