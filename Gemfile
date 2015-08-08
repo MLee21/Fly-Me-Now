@@ -25,12 +25,12 @@ source 'https://rails-assets.org' do
 end
 
 group :development, :test do
-  gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'capybara'
   gem 'poltergeist'
   gem 'launchy'
+  gem 'pry-byebug'
   gem 'pry-rails'
 end
 

@@ -43,7 +43,7 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
-    byebug (5.0.0)
+    byebug (4.0.5)
       columnize (= 0.9.0)
     capybara (2.4.4)
       mime-types (>= 1.16)
@@ -123,6 +123,9 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-byebug (3.1.0)
+      byebug (~> 4.0)
+      pry (~> 0.10)
     pry-rails (0.3.4)
       pry (>= 0.9.10)
     rack (1.6.4)
@@ -247,7 +250,6 @@ PLATFORMS
 
 DEPENDENCIES
   angularjs-foundation-rails
-  byebug
   capybara
   coffee-rails (~> 4.1.0)
   figaro
@@ -261,6 +263,7 @@ DEPENDENCIES
   mocha
   pg
   poltergeist
+  pry-byebug
   pry-rails
   rails (= 4.2.3)
   rails-assets-angular (= 1.2.16)!

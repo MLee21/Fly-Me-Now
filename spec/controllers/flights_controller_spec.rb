@@ -2,14 +2,19 @@ require "rails_helper"
 require "pp"
 
 RSpec.describe FlightsController do 
+  vcr_options = { allow_playback_repeats: true }
   describe "#index" do 
     it "will return the flights from origin airport" do 
-      VCR.use_cassette("flight_controller_data", re_record_interval: 1000000) do 
+      VCR.use_cassette("flight_controller_data", vcr_options) do 
         get :index, {city: "Denver"}
         expect(response.status).to eq(200)
         trips = JSON.parse(response.body)
         expect(trips.first).to eq({
-          Total_Price: 453.21,
+          Price: {
+            Total: {
+              sum: 495.20,
+            }
+          },
           Flights: [
             [
               {
