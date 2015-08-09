@@ -8,13 +8,15 @@
   font-weight: 400;
   color: white;
   margin-top: 100px;
-   text-shadow: 2px 2px black;
+  text-shadow: 2px 2px black;
 }
 
 button.small, .button.small {
   padding: 0.875rem 1.75rem 0.9375rem 1.75rem;
   font-size: 1.2rem;
   font-family: 'Roboto Condensed', sans-serif;
+  position:relative; 
+  // margin: -20px -50px; width:100px; top:50%; left:50%;
 }
 
 .full-width-nav {
@@ -72,3 +74,33 @@ body {
  background: #000 asset-url("plane_travel1.png") no-repeat;
   background-size: cover;
 }
+
+.checkboxList {
+    border:1px solid #000;
+    background-color:#fff; 
+    color:#000;
+    width: 500px; 
+    height: 400px; 
+    overflow-y: scroll;
+    padding: 20px;
+    border-radius: 5px;
+
+    .destination {
+      display:inline-block;
+      padding: 10px;
+    }
+
+    p {
+      font-size: 1em;
+      line-height: .6em;
+      margin-bottom: .3em;
+    }
+
+    h3 {
+      text-align: center;
+    }
+}
+
+.columns {
+  // -webkit-column-count: 4;
+}   

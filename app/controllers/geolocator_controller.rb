@@ -1,9 +1,8 @@
-class GeolocatorController < ApplicationController
-  respond_to :json
+# class GeolocatorController < ApplicationController
+#   respond_to :json
 
-  def create
-    session[:city] = params["city"]
-    byebug
-    respond_with session, location: flights_path
-  end
-end
+#   def create
+#     session[:origin_city] = params["city"]
+#     respond_with session, location: flights_path
+#   end
+# end

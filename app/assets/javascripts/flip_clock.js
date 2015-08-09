@@ -1,9 +1,9 @@
-$(document).ready(function () {
+// $(document).ready(function () {
 
-  var clock = $('.flip-clock').FlipClock({
-      clockFace: 'TwentyFourHourClock'
-  });
+//   var clock = $('.flip-clock').FlipClock({
+//       clockFace: 'TwelveFourHourClock'
+//   });
 
-});
+// });
 
 

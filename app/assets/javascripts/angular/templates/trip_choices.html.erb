@@ -1,0 +1,15 @@
+<!-- #angular html page -->
+<div class="checkboxList"> 
+  <h3 class-"center-text"> Select up to 3 destinations: </h3>
+  <div class="columns">
+
+  <div class= "destination" ng-repeat="destination in destinations" 
+  ng-class="{info:selected[destination.city], warning:!selected[destination.city] && maxSelected()}">
+    <label> <input type="checkbox" data-bind="value: airport_code, checked: isChecked" ng-model="selected[destination.city]" ng-disabled="!selected[destination.city] && maxSelected()"id={{destination.city}} />
+    <span data-bind="text: city"></span>
+     {{destination.city}}
+    </label>
+  </div>
+  </div>
+  <div class="center-text"> <button ng-click="getTrips()" class="button small round center"> Begin Adventure Now</button></div>
+</div>
