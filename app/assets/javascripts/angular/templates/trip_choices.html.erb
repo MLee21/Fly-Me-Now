@@ -1,0 +1,18 @@
+<!-- #angular html page -->
+
+
+ <div ng-controller="TripChoicesController as flight"> 
+ <div>
+ <div class="checkboxList"> 
+ <h3 class-"center-text"> Select up to 3 destinations: </h3>
+  <div ng-repeat="destination in destinations">
+    <label> <input type="checkbox" ng-model="destination.isChecked" />
+     {{destination.city}}
+    </label>
+  </div>
+ <button class="center-text button small round center"> Begin Adventure Now</button>
+ </div>
+ </div>
+  </div>
+</div>
+

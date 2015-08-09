@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require angular
 //= require angular-mm-foundation
+//= require angular-route
 //= require flipclock.min
 //= require foundation
 //= require_tree .
