@@ -1,4 +1,28 @@
+// angular
+//     .module('App',[])
+//     .controller('recordsCollectionController',function($scope){
+    //     $scope.selected = {};
+    //     $scope.destinations = [
+    //         {"id":1,"name":"Homer"},
+    //         {"id":2,"name":"Marge"},
+    //         {"id":3,"name":"Bart"},
+    //         {"id":4,"name":"Lisa"},
+    //         {"id":5,"name":"Maggie"}
+    //     ];
+
+    //     $scope.maxSelected = function(){
+    //         var count = 0;
+    //         for(x in $scope.selected){
+    //             if($scope.selected[x]) count++;
+    //         }
+    //         return (count===3) ? true : false;
+    //     };
+    // });
+
+
+
 function TripChoicesController($scope){
+  $scope.selected = {};
 
   $scope.destinations = [
     {
@@ -141,6 +165,15 @@ function TripChoicesController($scope){
       isChecked: false
     }
   ];
+  
+  $scope.maxSelected = function(){
+    var count = 0;
+    for(x in $scope.selected){
+        if($scope.selected[x]) count++;
+    }
+    return (count===3) ? true : false;
+  };
+
 };
 
 
@@ -148,11 +181,8 @@ function TripChoicesController($scope){
 
 
 
-
-
-
-
-  // flightInformation.then(function(response) {
-  //   $scope.response = response;
-  //   console.log(response);
-  // });
+//only allow 3 cities to be selected
+//upon click, box turns blue
+//grab airport code of destination, 
+//send each destination to FlightInformation Service 1 at a time
+//Flight Information Service needs to accept a destination airport

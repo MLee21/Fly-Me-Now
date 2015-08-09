@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   resources :geolocator, only: ["create"]
   resources :flights, only: ["show", "index"]
 
-  get "/:filename", to: "templates#show"
+  get "/templates/:filename", to: "templates#show"
 end

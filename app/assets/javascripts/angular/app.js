@@ -6,7 +6,7 @@ app.config(['$routeProvider',
   function($routeProvider){
     $routeProvider.
     when('/', {
-      templateUrl: 'trip_choices.html',
+      templateUrl: '/templates/trip_choices.html',
       controller: 'TripChoicesController'
     }).
     otherwise({
@@ -15,3 +15,5 @@ app.config(['$routeProvider',
 
   }
 ])
+
+

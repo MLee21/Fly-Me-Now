@@ -85,9 +85,9 @@ body {
     padding: 20px;
     border-radius: 5px;
 
-    div {
-        display:inline-block;
-        padding: 10px;
+    .destination {
+      display:inline-block;
+      padding: 10px;
     }
 
     p {
@@ -101,3 +101,6 @@ body {
     }
 }
 
+.columns {
+  // -webkit-column-count: 4;
+}   
