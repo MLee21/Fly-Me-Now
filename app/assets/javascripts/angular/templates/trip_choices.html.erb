@@ -1,11 +1,12 @@
 <!-- #angular html page -->
-<div class="checkboxList"> 
-  <h3 class-"center-text"> Select up to 3 destinations: </h3>
+<div class="checkboxList" id="checkboxList">
+  <%= image_tag('plane_icon.png', :class => 'plane') %>
+  <h3 class-"center-text"> Select up to 3 destinations </h3>
   <div class="columns">
 
-  <div class= "destination" ng-repeat="destination in destinations" 
+  <div class= "destination single_destination" ng-repeat="destination in destinations"
   ng-class="{info:selected[destination.city], warning:!selected[destination.city] && maxSelected()}">
-    <label> 
+    <label>
 
   <input type="checkbox" data-bind="value: airport_code, checked: isChecked" ng-model="selected[destination.city]" ng-disabled="!selected[destination.city] && maxSelected()"id="{{destination.city}}" />
     <span data-bind="text: city"></span>
@@ -13,7 +14,7 @@
     </label>
   </div>
   </div>
-  <div class="center-text"> <button ng-click="fetchFlights()" class="button small round center"> Begin Adventure Now</button></div>
+  <div class="center-text"> <button ng-click="fetchFlights()" class="button small round center" id="button"> Begin Adventure Now</button></div>
 </div>
 
 
