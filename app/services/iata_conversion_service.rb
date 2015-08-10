@@ -6,7 +6,7 @@ class IataConversionService
   def initialize
     @connection = Hurley::Client.new("https://airport.api.aero/")
   end
-
+  
   def iata_converter(city)
     uri_city = URI.encode(city)
     response = connection.get("airport/match/#{uri_city}", {
