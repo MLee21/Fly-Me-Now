@@ -1,6 +1,7 @@
-<div ng-repeat="result in results">
+<div ng-repeat="(destination, result) in results">
   
-  <h3> {{result.Price.Total.sum }}</h3>
+  <h2> {{destination}} </h2>
+  <h3> {{result.Price.Total.sum | currency}}</h3>
   <div ng-repeat="flight in result.Flights">
     {{ flight.Origin}}
     {{ flight.Destination}}

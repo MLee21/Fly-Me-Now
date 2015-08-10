@@ -1,24 +1,24 @@
 app.factory('tripChoiceDataFromApi', 
   ['geolocateUser', '$http', '$q',
   function (geolocateUser, $http, $q) {
-
     return function(selectTripChoices) {
-      var tripPromises = selectTripChoices.map(function(trip){
-
-        return geolocateUser.then(function(origin){
+      return geolocateUser.then(function(origin){
+        var tripPromisesByCity = selectTripChoices.reduce(function(tripPromisesByCity, trip){
           var destination = trip.airport_code;
-          return $http.get("/flights", {
+          var tripPromise = $http.get("/flights", {
             params: {
               origin_city: origin,
               destination_city: destination
             }
           }).then(function(response) {
             return response.data;
-          })
+          });
+          tripPromisesByCity[destination] = tripPromise;
+          return tripPromisesByCity;
+        }, {});
 
-        })
+        return $q.all(tripPromisesByCity);
       });
-      return $q.all(tripPromises);
     }
   }
 ]);
