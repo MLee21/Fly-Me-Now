@@ -40,14 +40,8 @@ GEM
     addressable (2.3.8)
     angularjs-foundation-rails (0.3.1.2)
     arel (6.0.2)
-    autoprefixer-rails (5.2.1)
-      execjs
-      json
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
-    bootstrap-sass (3.3.5)
-      autoprefixer-rails (>= 5.0.0.1)
-      sass (>= 3.2.19)
     builder (3.2.2)
     byebug (4.0.5)
       columnize (= 0.9.0)
@@ -269,7 +263,6 @@ PLATFORMS
 
 DEPENDENCIES
   angularjs-foundation-rails
-  bootstrap-sass (~> 3.3.4)
   capybara
   coffee-rails (~> 4.1.0)
   figaro
