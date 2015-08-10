@@ -2,7 +2,7 @@ app.controller('ResultsController', [
  '$scope', 'results', 
 
   function($scope, results){
-    console.log("Results",results);
+    console.log(results);
     $scope.results = results;
   }
 ])
