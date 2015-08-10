@@ -6,7 +6,7 @@ app.factory('tripChoiceDataFromApi',
       var tripPromises = selectTripChoices.map(function(trip){
 
         return geolocateUser.then(function(origin){
-          var destination = trip.city;
+          var destination = trip.airport_code;
           return $http.get("/flights", {
             params: {
               origin_city: origin,
