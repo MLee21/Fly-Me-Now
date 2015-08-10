@@ -150,8 +150,8 @@ GEM
     rails-assets-angular (1.2.16)
     rails-assets-angular-mocks (1.2.16)
       rails-assets-angular (= 1.2.16)
-    rails-assets-angular-route (1.2.16)
-      rails-assets-angular (= 1.2.16)
+    rails-assets-angular-ui-router (0.2.15)
+      rails-assets-angular (>= 1.0.8)
     rails-assets-moment (2.10.6)
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
@@ -281,7 +281,7 @@ DEPENDENCIES
   rails (= 4.2.3)
   rails-assets-angular (= 1.2.16)!
   rails-assets-angular-mocks (= 1.2.16)!
-  rails-assets-angular-route (= 1.2.16)!
+  rails-assets-angular-ui-router!
   rails-assets-moment!
   rails_12factor
   responders

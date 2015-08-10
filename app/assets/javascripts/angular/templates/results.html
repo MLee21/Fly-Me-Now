@@ -1,0 +1,12 @@
+<div ng-repeat="result in results">
+  
+  <h3> {{result.Price.Total.sum }}</h3>
+  <div ng-repeat="flight in result.Flights">
+    {{ flight.Origin}}
+    {{ flight.Destination}}
+    {{ flight.DepartureTime}}
+    {{ flight.Arrival}} 
+    {{ flight.Carrier}} 
+    {{ flight.Flight_Number}} 
+  <div>
+</div>

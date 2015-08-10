@@ -12,7 +12,9 @@ app.factory('tripChoiceDataFromApi',
               origin_city: origin,
               destination_city: destination
             }
-          });
+          }).then(function(response) {
+            return response.data;
+          })
 
         })
       });

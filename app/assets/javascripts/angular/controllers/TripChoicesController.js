@@ -1,10 +1,10 @@
 app.controller('TripChoicesController', [
-  '$scope', 'tripChoiceDataFromApi',
+  '$scope', 'tripChoiceDataFromApi', '$state',
   //tripChoiceDataFromApi comes from fle.js of the same name.
   //In this file it is a dependency
   //$ is for angular dependencies
 
-  function ($scope, tripChoiceDataFromApi){
+  function ($scope, tripChoiceDataFromApi, $state){
     $scope.selected = {};
 
     $scope.destinations = [
@@ -83,12 +83,7 @@ app.controller('TripChoicesController', [
       for (var selectedCity in $scope.selected) {
         selectTripChoices.push($scope.tripChoicesByCity[selectedCity]);
       }
-
-      //return the search results for all the user's selected cities
-      tripChoiceDataFromApi(selectTripChoices).then(function(tripResultsFromApi) {
-      //hallelujahVacation are the return values from the promise of the vacations 
-        console.log(tripResultsFromApi);
-      })
+      $state.go("results", {selectTripChoices: selectTripChoices})
     };
   }
 ]);
