@@ -15,12 +15,26 @@
     <%= javascript_include_tag "application", 'data-turbolinks-track' => false %>
     <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
     <%= csrf_meta_tags %>
+    <style media="screen">
+      .flip-clock{position: absolute; top: -10px; left: 47%;}
+      .flip-clock-wrapper{width:auto;}
+      .flip-clock-wrapper ul li a div div.inn{font-size:20px;}
+      .flip-clock-wrapper ul{width: 25px; height: 35px;}
+      .flip-clock-wrapper ul li a div{ height: 88%;}
+      .top-bar{height: 51px;}
+      .flip-clock-dot {color: #fff;}
+      .flip-clock-wrapper a:hover, .flip-clock-wrapper a {color: #fff;font-size: 14px;}
+      .flip-clock-meridium li a{line-height:37px;}
+      .flip-clock-dot {background: #fff;width: 6px;height: 6px;left: 7px;}
+      .flip-clock-dot.bottom {bottom: 66px;}
+      .flip-clock-dot.top {top: 14px;}
+    </style>
   </head>
 
   <!-- <body ng-app="flightsApp"> -->
   <body>
 
-    <div class="flip-clock"></div>
+
     <%= render 'shared/navbar' %>
 
     <%= yield %>

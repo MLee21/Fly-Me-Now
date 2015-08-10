@@ -1,13 +1,29 @@
-<div ng-repeat="(destination, result) in results">
-  
-  <h2> {{destination}} </h2>
-  <h3> {{result.Price.Total.sum | currency}}</h3>
-  <div ng-repeat="flight in result.Flights">
-    {{ flight.Origin}}
-    {{ flight.Destination}}
-    {{ flight.DepartureTime}}
-    {{ flight.Arrival}} 
-    {{ flight.Carrier}} 
-    {{ flight.Flight_Number}} 
-  <div>
+      <h1> Flight Results</h1>
+<div class="">
+
+  <div ng-repeat="(destination, result) in results" >
+    <div class="row">
+      <div class="{{destination}} large-4 columns">
+
+      </div>
+      <div class="large-8 columns results">
+        <%= image_tag('plane_icon.png', :class => 'plane2') %>
+        <h2> {{result.Price.Total.sum | currency}} |  {{destination}} </h2>
+        <div ng-repeat="flight in result.Flights" class="leg">
+          <p> <span>Flight Origin :</span> {{ flight.Origin}}</p>
+          <p> <span>Flight Destination :</span> {{ flight.Destination}}</p>
+          <p> <span>Flight Departure Time :</span> {{ flight.DepartureTime | date:'medium'}}</p>
+          <p> <span>Flight Arrival Time :</span> {{ flight.Arrival | date:'medium'}}</p>
+          <p> <span>Airline:</span> {{ flight.Carrier}}</p>
+          <p> <span>Flight Number:</span> {{ flight.Flight_Number}}</p>
+        <div>
+
+    </div>
+
+
+    </div>
+    <div class="center-text"> <button class="button small round center" id="button"> Purchase Flight</button></div>
+
+  </div>
+
 </div>
